@@ -2,14 +2,14 @@
 using namespace std;
 
 int main(){
-    long int gajiPokok, tj, lm, pajak, gajiSebelumPajak, gajiDiterima;
+    long int gajiPokok, tjg, lm, pajak, gajiSebelumPajak, gajiDiterima;
     int jk;
     cout << "Masukkan Gaji Pokok : ";
     cin >> gajiPokok;
     cout << "Masukkan Jam Kerja : ";
     cin >> jk;
 
-    tj = gajiPokok * 20 / 100;
+    tjg = gajiPokok * 20 / 100;
 
     if (jk > 200){
         lm = (jk - 200) * 20000;
@@ -17,7 +17,7 @@ int main(){
         lm = 0;
     }
 
-    gajiSebelumPajak = gajiPokok + tj + lm;
+    gajiSebelumPajak = gajiPokok + tjg + lm;
 
     pajak = gajiSebelumPajak * 10 / 100;
 
